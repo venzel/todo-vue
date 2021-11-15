@@ -1,29 +1,7 @@
 # todo
 
-## Project setup
-```
-npm install
-```
+👉 Projeto pode ser visualizado em: <a href="http://todo.venzel.com.br">todo.venzel.com.br</a>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Front end
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-   VueJs
