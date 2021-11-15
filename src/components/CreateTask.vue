@@ -13,7 +13,27 @@ export default {
         };
     },
     methods: {
+        validate(e) {
+            const status = {
+                error: false,
+                message: '',
+            };
+
+            if (!e) {
+                status['error'] = true;
+                status['message'] = 'Preencha o campo corretamente!';
+            }
+
+            return status;
+        },
         add() {
+            const { error, message } = this.validate(this.name);
+
+            if (error) {
+                alert(message);
+                return;
+            }
+
             this.$emit('taskAdd', { name: this.name });
 
             this.name = '';
